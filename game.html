@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taylor Swift Pun Game</title>
+  <link rel="stylesheet" href="css/taylorswift.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="game-body">
+    <a href="from_scratch.html" class="back-link">← Back to Taylor Swift</a>
+
+  <div class="game-container">
+    <h1>🎤 Taylor Swift Pun Generator 🎶</h1>
+    <p>Click the button below to receive a Swiftie-worthy pun!</p>
+    <button class="game-button" onclick="generatePun()">Get a Pun</button>
+    <div class="pun-box" id="pun-display"></div>
+  </div>
+
+  <script>
+    const puns = [
+      "You Belong with Brie 🧀",
+      "All Too Swell 💕",
+      "Shake It Off... and vacuum 🧹",
+      "Teardrops on My Carbs 🍩",
+      "Look What You Made Me Brew ☕",
+      "We Are Never Getting Back Together... unless there's pizza 🍕",
+      "Bad Blood? More like Red Velvet 🍰",
+      "I Knew You Were Truffle 🍫",
+      "Swiftly Done ✅",
+      "Reputation? I’m building one for pun-making!"
+    ];
+
+    function generatePun() {
+      const pun = puns[Math.floor(Math.random() * puns.length)];
+      document.getElementById("pun-display").textContent = pun;
+    }
+  </script>
+</body>
+</html>

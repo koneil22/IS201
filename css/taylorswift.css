@@ -1,0 +1,207 @@
+/* ----------------- Reset and Base Styling ----------------- */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+    color: #333;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #c71585; /* Taylor Swift pink */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* ----------------- Navigation Bar ----------------- */
+nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+
+/* ----------------- Header Section ----------------- */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc0cb; /* Light pink */
+    padding: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.header-img {
+    width: 250px; /* ← was 120px */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-img:hover {
+    transform: scale(2);
+}
+
+
+.title {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.title h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+/* ----------------- Main Content ----------------- */
+main {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ----------------- Headings ----------------- */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #c71585;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/* ----------------- Bio Section ----------------- */
+.bio ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bio li {
+    padding: 5px 0;
+}
+
+
+/* ----------------- Albums List ----------------- */
+.albums ol {
+    padding-left: 0;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.albums li {
+    font-weight: bold;
+}
+
+
+/* ----------------- Footer ----------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Optional: center the button on the page */
+.button-wrapper {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  /* Button styling */
+  .game-button {
+    background-color: #ff69b4;  /* Hot pink, very Taylor Swift */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background-color: #ff1493;  /* Deeper pink on hover */
+  }
+  
+  .centered {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .pun-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #800080; /* A nice Swift purple */
+  }
+
+  /* Page background for the game */
+.game-body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+    color: #333;
+  }
+  
+  /* Container for the whole pun game */
+  .game-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff0f6;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    text-align: center;
+  }
+  
+  /* Pun text box */
+  .pun-box {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #800080;
+    background-color: #fdf0ff;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
+    min-height: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+  
